@@ -224,7 +224,7 @@ int main()
 		layer.Header.Type = VRAPI_LAYER_TYPE_PROJECTION2;
 		layer.Header.Flags = 
 			VRAPI_FRAME_LAYER_FLAG_CHROMATIC_ABERRATION_CORRECTION;
-			//VRAPI_FRAME_LAYER_FLAG_FIXED_TO_VIEW;
+			//VRAPI_FRAME_LAYER_FLAG_FIXED_TO_VIEW; (HUD)
 		layer.Header.ColorScale.x = 1.0f;
 		layer.Header.ColorScale.y = 1.0f;
 		layer.Header.ColorScale.z = 1.0f;
@@ -232,7 +232,7 @@ int main()
 		layer.Header.SrcBlend = VRAPI_FRAME_LAYER_BLEND_ONE;
 		layer.Header.DstBlend = VRAPI_FRAME_LAYER_BLEND_ZERO;
 		layer.Header.Reserved = NULL;
-		//layer.HeadPose.Pose.Orientation.w = 1.0f; // For face-fixed 
+		//layer.HeadPose.Pose.Orientation.w = 1.0f; // For face-fixed  (HUD)
 		layer.HeadPose = tracking.HeadPose;
 
 		for (int eye = 0; eye < VRAPI_FRAME_LAYER_EYE_MAX; eye++) {
