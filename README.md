@@ -2,6 +2,8 @@
 
 Based off of https://github.com/cnlohr/rawdrawandroid
 
+This just does a texture / color background and does NOT do actual VR.  See the OpenXR example for that.
+
 ## Want OpenXR Instead?
 
 Use it here: https://github.com/cnlohr/tsopenxr/tree/master/meta_quest
